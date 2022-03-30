@@ -1,0 +1,391 @@
+-- Merging decision tree log ---
+application
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:12:4-46:19
+MERGED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\cb96bb2c73a9a359ac6db36b67e75b6a\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\cb96bb2c73a9a359ac6db36b67e75b6a\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b0500e94add2c5892d4c824fd6b35062\jetified-play-services-tasks-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b0500e94add2c5892d4c824fd6b35062\jetified-play-services-tasks-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\2e4a85810cbfbcf1377eeb56b9a23e36\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\2e4a85810cbfbcf1377eeb56b9a23e36\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b2043a1ccadb8e19bba9b8b705d25b64\jetified-play-services-basement-17.2.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b2043a1ccadb8e19bba9b8b705d25b64\jetified-play-services-basement-17.2.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.core:core:1.6.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\884708a9396f81808c0ac10f4b98ea32\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\884708a9396f81808c0ac10f4b98ea32\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:name
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml
+manifest
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+MERGED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+MERGED from [:shared_preferences_android] C:\dev\the-eventors-app\the_eventors_app\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:permission_handler_android] C:\dev\the-eventors-app\the_eventors_app\build\permission_handler_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:google_maps_flutter] C:\dev\the-eventors-app\the_eventors_app\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\dev\the-eventors-app\the_eventors_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] C:\dev\the-eventors-app\the_eventors_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:google_api_headers] C:\dev\the-eventors-app\the_eventors_app\build\google_api_headers\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:package_info_plus] C:\dev\the-eventors-app\the_eventors_app\build\package_info_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:fluttertoast] C:\dev\the-eventors-app\the_eventors_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:geocoder] C:\dev\the-eventors-app\the_eventors_app\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\ad201fac15a88598107ec645f351f5b4\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\a0dda19c88b91d185bde1c2434cd4953\exifinterface-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\4baa41ae969e39d9320c43f68af4b761\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6bb69121fbfc7f55675d79a165028fc2\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\cb96bb2c73a9a359ac6db36b67e75b6a\jetified-play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b0500e94add2c5892d4c824fd6b35062\jetified-play-services-tasks-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\2e4a85810cbfbcf1377eeb56b9a23e36\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b2043a1ccadb8e19bba9b8b705d25b64\jetified-play-services-basement-17.2.1\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8601dd65e0c6893d5abc5ccde1e2cab3\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e94706e3c9d551c1eecceda07b48492d\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:15:1-41:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5eb390e850cc60b5ba45e55531b6c245\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f67a098865f65bce4861f38e5b7d3f1b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f48a4efd536c3f688ae4585294152326\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e0c23ae97fcfc3b464135c8769eb2bd9\vectordrawable-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\ae39e38aa58f5c391f29a4bfad4a41a4\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\92d1f830d8a4f76d15ea1f849fb6f29f\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\172ae1f46f014e6681a2cc350fa8b737\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\0c1acf1a22491565f664a84faa8fdcda\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\09c1773ed3597f8bec6064dc26d157be\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\627b1a478fb3a47175bfa78ea61ecb83\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9ccab238727e236e8aff01a0f95cebe4\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f6886f612e9817326f4f408c1489ce06\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9344e812e9436e7dbce7c9baf11f7fbd\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\61ef02e8f0f19ac7089cb3c73160753b\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8d7928c9f52af5f964a662866fcebb3e\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8108bc8c5f35a568f919dbab3be0e175\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\403e5322101e882ebd13d146c86f92ca\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6c6575c923e75933616af1a602db32e0\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\69ba5a98805d81d755806668ff70d04f\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\884708a9396f81808c0ac10f4b98ea32\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\390c3042bf72c0890333639a198b3a0c\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\c8d7e3b2963d9fc9e8f1cf9aeb870fb3\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\53007b1b67d39cbaab28f5e7912b2517\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\cf2c99aa287de2f08f087dc1237c8793\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\81577b20856de3173b99a652d8df052c\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9a0e475eb211916dfa0da9de1d6c02a3\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9ed314abc3df537a2d48c1cb6d65998e\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\c3faf502f33fb717fcd4e61cd2784a10\jetified-volley-1.2.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\a471cf7e015656d82edcf5ab8a0e7d86\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5bfc0955e244073bdc8cc139cda5e092\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:2:5-43
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:1:1-47:12
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:3:6-77
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:3:23-75
+uses-permission#android.permission.CAMERA
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:4:5-65
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:4:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:5:22-66
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:9:5-66
+MERGED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:9:5-66
+MERGED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:9:5-66
+MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:10:5-68
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:10:22-65
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:11:5-77
+	android:name
+		ADDED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:11:22-74
+uses-sdk
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml
+MERGED from [:shared_preferences_android] C:\dev\the-eventors-app\the_eventors_app\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] C:\dev\the-eventors-app\the_eventors_app\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] C:\dev\the-eventors-app\the_eventors_app\build\permission_handler_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] C:\dev\the-eventors-app\the_eventors_app\build\permission_handler_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] C:\dev\the-eventors-app\the_eventors_app\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] C:\dev\the-eventors-app\the_eventors_app\build\google_maps_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\dev\the-eventors-app\the_eventors_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\dev\the-eventors-app\the_eventors_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\dev\the-eventors-app\the_eventors_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\dev\the-eventors-app\the_eventors_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_api_headers] C:\dev\the-eventors-app\the_eventors_app\build\google_api_headers\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_api_headers] C:\dev\the-eventors-app\the_eventors_app\build\google_api_headers\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:package_info_plus] C:\dev\the-eventors-app\the_eventors_app\build\package_info_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:package_info_plus] C:\dev\the-eventors-app\the_eventors_app\build\package_info_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\dev\the-eventors-app\the_eventors_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\dev\the-eventors-app\the_eventors_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geocoder] C:\dev\the-eventors-app\the_eventors_app\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geocoder] C:\dev\the-eventors-app\the_eventors_app\build\geocoder\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\ad201fac15a88598107ec645f351f5b4\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\ad201fac15a88598107ec645f351f5b4\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:7:5-44
+MERGED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:7:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\a0dda19c88b91d185bde1c2434cd4953\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\a0dda19c88b91d185bde1c2434cd4953\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\4baa41ae969e39d9320c43f68af4b761\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\4baa41ae969e39d9320c43f68af4b761\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6bb69121fbfc7f55675d79a165028fc2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6bb69121fbfc7f55675d79a165028fc2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\cb96bb2c73a9a359ac6db36b67e75b6a\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\cb96bb2c73a9a359ac6db36b67e75b6a\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b0500e94add2c5892d4c824fd6b35062\jetified-play-services-tasks-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.2] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b0500e94add2c5892d4c824fd6b35062\jetified-play-services-tasks-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\2e4a85810cbfbcf1377eeb56b9a23e36\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\2e4a85810cbfbcf1377eeb56b9a23e36\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b2043a1ccadb8e19bba9b8b705d25b64\jetified-play-services-basement-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b2043a1ccadb8e19bba9b8b705d25b64\jetified-play-services-basement-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8601dd65e0c6893d5abc5ccde1e2cab3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8601dd65e0c6893d5abc5ccde1e2cab3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e94706e3c9d551c1eecceda07b48492d\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e94706e3c9d551c1eecceda07b48492d\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5eb390e850cc60b5ba45e55531b6c245\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5eb390e850cc60b5ba45e55531b6c245\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f67a098865f65bce4861f38e5b7d3f1b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f67a098865f65bce4861f38e5b7d3f1b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f48a4efd536c3f688ae4585294152326\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f48a4efd536c3f688ae4585294152326\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e0c23ae97fcfc3b464135c8769eb2bd9\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e0c23ae97fcfc3b464135c8769eb2bd9\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\ae39e38aa58f5c391f29a4bfad4a41a4\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\ae39e38aa58f5c391f29a4bfad4a41a4\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\92d1f830d8a4f76d15ea1f849fb6f29f\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\92d1f830d8a4f76d15ea1f849fb6f29f\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\172ae1f46f014e6681a2cc350fa8b737\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\172ae1f46f014e6681a2cc350fa8b737\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\0c1acf1a22491565f664a84faa8fdcda\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\0c1acf1a22491565f664a84faa8fdcda\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\09c1773ed3597f8bec6064dc26d157be\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\09c1773ed3597f8bec6064dc26d157be\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\627b1a478fb3a47175bfa78ea61ecb83\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\627b1a478fb3a47175bfa78ea61ecb83\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9ccab238727e236e8aff01a0f95cebe4\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9ccab238727e236e8aff01a0f95cebe4\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f6886f612e9817326f4f408c1489ce06\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\f6886f612e9817326f4f408c1489ce06\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9344e812e9436e7dbce7c9baf11f7fbd\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9344e812e9436e7dbce7c9baf11f7fbd\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\61ef02e8f0f19ac7089cb3c73160753b\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\61ef02e8f0f19ac7089cb3c73160753b\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8d7928c9f52af5f964a662866fcebb3e\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8d7928c9f52af5f964a662866fcebb3e\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8108bc8c5f35a568f919dbab3be0e175\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\8108bc8c5f35a568f919dbab3be0e175\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\403e5322101e882ebd13d146c86f92ca\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\403e5322101e882ebd13d146c86f92ca\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6c6575c923e75933616af1a602db32e0\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6c6575c923e75933616af1a602db32e0\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\69ba5a98805d81d755806668ff70d04f\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\69ba5a98805d81d755806668ff70d04f\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\884708a9396f81808c0ac10f4b98ea32\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\884708a9396f81808c0ac10f4b98ea32\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\390c3042bf72c0890333639a198b3a0c\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\390c3042bf72c0890333639a198b3a0c\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\c8d7e3b2963d9fc9e8f1cf9aeb870fb3\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\c8d7e3b2963d9fc9e8f1cf9aeb870fb3\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\53007b1b67d39cbaab28f5e7912b2517\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\53007b1b67d39cbaab28f5e7912b2517\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\cf2c99aa287de2f08f087dc1237c8793\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\cf2c99aa287de2f08f087dc1237c8793\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\81577b20856de3173b99a652d8df052c\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\81577b20856de3173b99a652d8df052c\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9a0e475eb211916dfa0da9de1d6c02a3\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9a0e475eb211916dfa0da9de1d6c02a3\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9ed314abc3df537a2d48c1cb6d65998e\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\9ed314abc3df537a2d48c1cb6d65998e\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\c3faf502f33fb717fcd4e61cd2784a10\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\c3faf502f33fb717fcd4e61cd2784a10\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\a471cf7e015656d82edcf5ab8a0e7d86\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\a471cf7e015656d82edcf5ab8a0e7d86\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5bfc0955e244073bdc8cc139cda5e092\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5bfc0955e244073bdc8cc139cda5e092\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\dev\the-eventors-app\the_eventors_app\android\app\src\debug\AndroidManifest.xml
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+	android:exported
+		ADDED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+	android:resource
+		ADDED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+	android:name
+		ADDED from [:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:9:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:10:22-73
+activity#com.google.android.libraries.places.widget.AutocompleteActivity
+ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:14:9-20:20
+	android:label
+		ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:17:13-62
+	android:windowSoftInputMode
+		ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:19:13-55
+	android:exported
+		ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:18:13-61
+	android:name
+		ADDED from [com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:15:13-91
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\6f3daa1ca7d5f0cb334e07491a88b930\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\e8e7a8cf96a5af99d2ff310d8b6da608\jetified-play-services-base-17.2.1\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b2043a1ccadb8e19bba9b8b705d25b64\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b2043a1ccadb8e19bba9b8b705d25b64\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.2.1] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\b2043a1ccadb8e19bba9b8b705d25b64\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\facd476a18aa87effd8b8b36f730ec56\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\5dd6af8d18148917a052c78bb0cf19e9\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132

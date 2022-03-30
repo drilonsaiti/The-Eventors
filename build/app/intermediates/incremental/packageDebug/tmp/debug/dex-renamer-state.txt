@@ -1,0 +1,4 @@
+#Tue Mar 29 20:27:50 CEST 2022
+base.0=C\:\\dev\\the-eventors-app\\the_eventors_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
