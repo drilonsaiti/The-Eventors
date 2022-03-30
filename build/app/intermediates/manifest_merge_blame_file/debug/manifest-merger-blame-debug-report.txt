@@ -12,32 +12,32 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:9:5-66
-14-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:9:22-64
+14-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:9:5-66
+14-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:9:22-64
 15    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
-15-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:3:6-77
-15-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:3:23-75
+15-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:3:6-77
+15-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:3:23-75
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:4:5-65
-16-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:4:22-62
+16-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:4:5-65
+16-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:4:22-62
 17    <uses-permission android:name="android.permission.FLASHLIGHT" />
-17-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:5:5-69
-17-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:5:22-66
+17-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:5:5-69
+17-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:5:22-66
 18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-18-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:6:5-80
-18-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:6:22-77
+18-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:6:5-80
+18-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:6:22-77
 19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-19-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:7:5-80
-19-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:7:22-78
+19-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:7:5-80
+19-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:7:22-78
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:8:5-79
-20-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:8:22-76
+20-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:8:5-79
+20-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:8:22-76
 21    <uses-permission android:name="android.permission.WAKE_LOCK" />
-21-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:10:5-68
-21-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:10:22-65
+21-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:10:5-68
+21-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:10:22-65
 22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-22-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:11:5-77
-22-->C:\dev\the-eventors-app\the_eventors_app\android\app\src\main\AndroidManifest.xml:11:22-74
+22-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:11:5-77
+22-->C:\Users\DRILON\Desktop\the-eventors-app\android\app\src\main\AndroidManifest.xml:11:22-74
 23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 23-->[com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:9:5-79
 23-->[com.google.android.libraries.places:places:2.5.0] C:\Users\DRILON\.gradle\caches\transforms-2\files-2.1\45a268d13954ba4d722f6682f28f6738\jetified-places-2.5.0\AndroidManifest.xml:9:22-76
@@ -96,21 +96,21 @@
 70            android:value="AIzaSyBrSx9Jawri-SBFstAYWeFrpoLyhEup1B4" />
 71
 72        <provider
-72-->[:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+72-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
 73            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-73-->[:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+73-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
 74            android:authorities="com.example.the_eventors_app.flutter.image_provider"
-74-->[:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+74-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
 75            android:exported="false"
-75-->[:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+75-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
 76            android:grantUriPermissions="true" >
-76-->[:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+76-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
 77            <meta-data
-77-->[:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+77-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
 78                android:name="android.support.FILE_PROVIDER_PATHS"
-78-->[:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+78-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
 79                android:resource="@xml/flutter_image_picker_file_paths" />
-79-->[:image_picker] C:\dev\the-eventors-app\the_eventors_app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+79-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
 80        </provider>
 81
 82        <uses-library

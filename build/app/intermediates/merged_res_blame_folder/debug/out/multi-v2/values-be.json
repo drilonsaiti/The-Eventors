@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\dev\\the-eventors-app\\the_eventors_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be\\values-be.xml",
+            "outputFile": "C:\\Users\\DRILON\\Desktop\\the-eventors-app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-be\\values-be.xml",
             "map": [
                 {
                     "source": "C:\\Users\\DRILON\\.gradle\\caches\\transforms-2\\files-2.1\\b2043a1ccadb8e19bba9b8b705d25b64\\jetified-play-services-basement-17.2.1\\res\\values-be\\values.xml",

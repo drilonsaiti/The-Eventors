@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\dev\\the-eventors-app\\the_eventors_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kn\\values-kn.xml",
+            "outputFile": "C:\\Users\\DRILON\\Desktop\\the-eventors-app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kn\\values-kn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\DRILON\\.gradle\\caches\\transforms-2\\files-2.1\\45a268d13954ba4d722f6682f28f6738\\jetified-places-2.5.0\\res\\values-kn\\values.xml",
