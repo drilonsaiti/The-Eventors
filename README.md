@@ -4,9 +4,10 @@
 
 
 
+
 ### Home screen
 
-![home_screen](https://user-images.githubusercontent.com/50522333/160788300-e8e1ea21-500a-453e-8205-d4ab9ea21c98.png)
+![homescreen](https://user-images.githubusercontent.com/50522333/160896975-e16ba49b-aa8f-432b-afbe-f22ec32db554.png)
 
 
 ### Register screen
@@ -15,7 +16,7 @@
 
 ### Login screen
 
-![login_screen](https://user-images.githubusercontent.com/50522333/160788305-44b0f04e-8621-48e0-b6bb-8833b288e546.png)
+![login](https://user-images.githubusercontent.com/50522333/160896969-4d5b238e-35a6-424e-b0c3-72962156ef6b.png)
 
 
 ### Events screen 
