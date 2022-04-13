@@ -2,7 +2,11 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:the_eventors_app/db/events_database.dart';
 import 'package:the_eventors_app/models/event.dart';
+import 'package:the_eventors_app/pages/event_form_page.dart';
+import 'package:the_eventors_app/pages/event_page.dart';
+import 'package:the_eventors_app/pages/my_events_info.dart';
 
 class MyEventsWidget extends StatefulWidget {
   final Event event;
@@ -35,12 +39,7 @@ class MyEventsWidgetState extends State<MyEventsWidget> {
 
   Widget get MyEventsWidget {
     return new Card(
-        shape: StadiumBorder(
-          side: BorderSide(
-            color: Colors.black,
-            width: 2.0,
-          ),
-        ),
+        shadowColor: Colors.black,
         child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
           ListTile(
             leading:
@@ -48,6 +47,10 @@ class MyEventsWidgetState extends State<MyEventsWidget> {
             title: Text(
                 '${widget.event.title} start on: ${this.convertDateTime(widget.event.startTime)}'),
             subtitle: Text('${widget.event.location}'),
+            trailing: Row(mainAxisSize: MainAxisSize.min, children: [
+              IconButton(onPressed: editEvent, icon: Icon(Icons.edit)),
+              IconButton(onPressed: deleteEvent, icon: Icon(Icons.delete)),
+            ]),
           ),
         ]));
   }
@@ -57,5 +60,23 @@ class MyEventsWidgetState extends State<MyEventsWidget> {
     return new Container(
       child: MyEventsWidget,
     );
+  }
+
+  editEvent() {
+    return Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => EventFormPage(event: widget.event),
+        ));
+  }
+
+  deleteEvent() async {
+    await EventDatabase.instance.delete(widget.event.id!);
+
+    return Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => MyEvents(),
+        ));
   }
 }

@@ -30,6 +30,7 @@ class _EventDetailsPage extends State<EventDetailsContent> {
   bool isLoading = false;
   bool hasPresedGoing = false;
   bool hasPresedInteresed = false;
+  bool dontChange = false;
   var lengthGoing;
   @override
   void initState() {
@@ -59,9 +60,11 @@ class _EventDetailsPage extends State<EventDetailsContent> {
 
     List<String> list = participant.interesed!.split(",");
     int indx = list.indexOf(user.toString());
-    if (indx != -1) {
-      debugPrint("IN INDX");
-      hasPresedInteresed = true;
+    if (!dontChange) {
+      if (indx != -1) {
+        debugPrint("IN INDX");
+        hasPresedInteresed = true;
+      }
     }
     setState(() {
       isLoading = false;
@@ -79,9 +82,11 @@ class _EventDetailsPage extends State<EventDetailsContent> {
 
     List<String> list = participant.going!.split(",");
     int indx = list.indexOf(user.toString());
-    if (indx != -1) {
-      debugPrint("IN INDX");
-      hasPresedGoing = true;
+    if (!dontChange) {
+      if (indx != -1) {
+        debugPrint("IN INDX");
+        hasPresedGoing = true;
+      }
     }
     setState(() {
       isLoading = false;
@@ -244,7 +249,7 @@ class _EventDetailsPage extends State<EventDetailsContent> {
                     padding: const EdgeInsets.all(8),
                     child: Card(
                       child: SizedBox(
-                        child: guest != ""
+                        child: guest.length != 1
                             ? Text(
                                 guest.toString(),
                                 style: TextStyle(
@@ -388,10 +393,6 @@ class _EventDetailsPage extends State<EventDetailsContent> {
                               getGoing();
                               getGoingParticpant(event.id);
                               if (hasPresedGoing == false) {
-                                setState(() {
-                                  hasPresedGoing = true;
-                                  hasPresedInteresed = false;
-                                });
                                 addGoingParticipant(event.id);
                                 //addGoingMyParticipant(event.id);
                                 getGoingParticpant(event.id);
@@ -437,10 +438,6 @@ class _EventDetailsPage extends State<EventDetailsContent> {
                         getInteresed();
                         getInteresedParticpant(event.id);
                         if (hasPresedInteresed == false) {
-                          setState(() {
-                            hasPresedInteresed = true;
-                            hasPresedGoing = false;
-                          });
                           addInteresedParticipant(event.id);
                           //addInteresedMyParticipant(event.id);
                           getInteresedParticpant(event.id);
@@ -496,7 +493,10 @@ class _EventDetailsPage extends State<EventDetailsContent> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? user = prefs.getString('username').toString();
     String going = participant.going! + user.toString() + ",";
-
+    setState(() {
+      hasPresedGoing = true;
+      hasPresedInteresed = false;
+    });
     final participantObj = participant.copy(
         eventId: event, going: going, interesed: participant.interesed);
     await ParticipantDatabase.instance.update(participantObj);
@@ -529,6 +529,11 @@ class _EventDetailsPage extends State<EventDetailsContent> {
     int id = going.indexOf(user.toString());
     going.removeAt(id);
     String strGoing = going.join(",");
+    setState(() {
+      this.dontChange = true;
+      this.hasPresedGoing = false;
+      this.hasPresedInteresed = false;
+    });
 
     final participantObj = participant.copy(
         eventId: event, going: strGoing, interesed: participant.interesed);
@@ -569,7 +574,11 @@ class _EventDetailsPage extends State<EventDetailsContent> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? user = prefs.getString('username').toString();
     String interesed = participant.interesed! + user.toString() + ",";
-
+    setState(() {
+      this.dontChange = true;
+      hasPresedInteresed = true;
+      hasPresedGoing = false;
+    });
     final participantObj = participant.copy(
         eventId: event, going: participant.going, interesed: interesed);
     await ParticipantDatabase.instance.update(participantObj);
@@ -602,6 +611,10 @@ class _EventDetailsPage extends State<EventDetailsContent> {
     int id = interesed.indexOf(user.toString());
     interesed.removeAt(id);
     String strInteresed = interesed.join(",");
+    setState(() {
+      this.hasPresedGoing = false;
+      this.hasPresedInteresed = false;
+    });
 
     final participantObj = participant.copy(
         eventId: event, going: participant.going, interesed: strInteresed);

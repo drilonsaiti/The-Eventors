@@ -67,7 +67,7 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBrSx9Jawri-SBFstAYWeFrpoLyhEup1B4" />
+            android:value="AIzaSyD-MrgkVemWgV6bBLMji3TXTrmqeTGLqsM" />
 
         <provider
             android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"

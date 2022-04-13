@@ -5,6 +5,7 @@ import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_google_places/flutter_google_places.dart';
 import 'package:geocoder/geocoder.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:the_eventors_app/db/category_database.dart';
 import 'package:the_eventors_app/db/events_database.dart';
@@ -36,6 +37,7 @@ class _EventPageState extends State<EventFormPage> {
   late String location;
   late String description;
   late String guest;
+  late String categoryName;
   String imageData = "";
   File? imageFile;
   GoogleMapsPlaces _places = GoogleMapsPlaces(apiKey: googleAPIKey);
@@ -52,10 +54,12 @@ class _EventPageState extends State<EventFormPage> {
     super.initState();
     categories = [];
     refreshCategories();
+    categoryName = "";
+    getCategoryName(widget.event?.categoryId);
     //images = [];
     //imageFile = Future<File>;
     username = "";
-    time = "";
+    time = widget.event?.startTime.toString() ?? "";
     title = widget.event?.title ?? '';
     startTime = widget.event?.startTime ?? DateTime.now();
     duration = widget.event?.duration ?? '';
@@ -67,18 +71,27 @@ class _EventPageState extends State<EventFormPage> {
 
   @override
   void dispose() {
-    CategoryDatabase.instance.close();
-
     super.dispose();
+  }
+
+  Future<void> getCategoryName(int? id) async {
+    debugPrint("HEHE");
+    var category = await CategoryDatabase.instance.readById(id);
+    if (category != null) {
+      debugPrint("HAHA");
+    }
+    setState(() {
+      categoryName = category!.name.toString();
+    });
+    debugPrint(categoryName);
   }
 
   Future refreshCategories() async {
     setState(() => isLoading = true);
 
     this.categories = (await CategoryDatabase.instance.readAllCategories());
-    this.categories!.remove("All");
     getUsername();
-
+    getCategoryName(widget.event?.categoryId);
     setState(() => isLoading = false);
   }
 
@@ -93,6 +106,7 @@ class _EventPageState extends State<EventFormPage> {
       setState(() {
         imageFile = File(pickedImage.path);
       });
+
       imageData += base64Encode(imageFile!.readAsBytesSync()) + " , ";
       return imageData;
     } else {
@@ -100,16 +114,24 @@ class _EventPageState extends State<EventFormPage> {
     }
   }
 
+  convertDateTime(DateTime? time) {
+    final f = new DateFormat('dd-MM-yyyy hh:mm');
+
+    return f.format(time!).toString();
+  }
+
   getLenghtOfImages() {
     var images;
-    var length;
-    if (imageData != null) {
-      var images = imageData.split(" , ");
-      length = images.length;
-    } else {
-      length = 0;
+    var length = 0;
+    if (imageData == "") {
+      var img = widget.event!.images.split(" , ");
+      length = img.length - 1;
     }
-    return length - 1;
+    if (imageData != null && imageData != "") {
+      var images = imageData.split(" , ");
+      //length += images.length - 1;
+    }
+    return length;
   }
 
   Future<void> getUsername() async {
@@ -183,7 +205,7 @@ class _EventPageState extends State<EventFormPage> {
                           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
                           hintText: time == ""
                               ? "Start of event - Date and time"
-                              : time.toString().substring(0, time.length - 4),
+                              : convertDateTime(widget.event?.startTime),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -228,7 +250,9 @@ class _EventPageState extends State<EventFormPage> {
                         decoration: InputDecoration(
                           prefixIcon: Icon(Icons.category),
                           contentPadding: EdgeInsets.fromLTRB(5, 15, 5, 15),
-                          hintText: "Select category",
+                          hintText: categoryName != ""
+                              ? categoryName
+                              : "Select category",
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -245,10 +269,13 @@ class _EventPageState extends State<EventFormPage> {
                         },
                         isExpanded: false,
                         iconSize: 24.0,
-                        hint: _category != null
+                        hint: categoryId == 0
                             ? Text(_category.name.toString(),
                                 style: TextStyle(fontSize: 24.0))
-                            : Text('Select category',
+                            : Text(
+                                categoryName != ""
+                                    ? categoryName
+                                    : "Select category",
                                 style: TextStyle(fontSize: 24.0)),
                       )
                     ],
@@ -304,7 +331,7 @@ class _EventPageState extends State<EventFormPage> {
                 child: MaterialButton(
                   minWidth: double.infinity,
                   height: 60,
-                  onPressed: addEvent,
+                  onPressed: addOrUpdateEvent,
                   color: Color(0xff0095FF),
                   elevation: 0,
                   shape: RoundedRectangleBorder(
@@ -343,6 +370,45 @@ class _EventPageState extends State<EventFormPage> {
       //this.location = data.first.addressLine;
       debugPrint("GEOCODER " + data.first.countryName);
     }
+  }
+
+  void addOrUpdateEvent() async {
+    final isValid = _formKey.currentState!.validate();
+
+    if (isValid) {
+      final isUpdating = widget.event != null;
+
+      if (isUpdating) {
+        await updateEvent();
+      } else {
+        await addEvent();
+      }
+
+      Navigator.of(context).pop();
+    }
+  }
+
+  Future updateEvent() async {
+    List<String> img = widget.event!.images.split(" , ");
+    String imgData = "";
+    for (int i = 0; i < img.length; i++) {
+      if (img[i] != "") {
+        imgData += img[i] + " , ";
+      }
+    }
+    imgData += imageData;
+    final event = widget.event!.copy(
+        title: title,
+        startTime: DateTime.parse(time),
+        duration: duration,
+        location: location,
+        description: description,
+        images: imgData,
+        categoryId: categoryId,
+        createdTime: DateTime.now(),
+        createdBy: username,
+        guest: guest);
+    await EventDatabase.instance.update(event);
   }
 
   Future addEvent() async {

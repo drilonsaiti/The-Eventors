@@ -93,7 +93,7 @@
 67            android:value="2" />
 68        <meta-data
 69            android:name="com.google.android.geo.API_KEY"
-70            android:value="AIzaSyBrSx9Jawri-SBFstAYWeFrpoLyhEup1B4" />
+70            android:value="AIzaSyD-MrgkVemWgV6bBLMji3TXTrmqeTGLqsM" />
 71
 72        <provider
 72-->[:image_picker] C:\Users\DRILON\Desktop\the-eventors-app\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20

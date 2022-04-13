@@ -56,28 +56,37 @@ class _MyEventsState extends State<MyEvents> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        brightness: Brightness.light,
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          elevation: 0,
-          brightness: Brightness.light,
-          backgroundColor: Colors.white,
-          title: Text(
-            "My created events",
-            style: TextStyle(color: Colors.blueAccent),
-          ),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(
-              Icons.arrow_back_ios,
-              size: 20,
-              color: Colors.black,
-            ),
+        title: Text(
+          "My created events",
+          style: TextStyle(color: Colors.blueAccent),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => EventPage(),
+                ));
+          },
+          icon: Icon(
+            Icons.arrow_back_ios,
+            size: 20,
+            color: Colors.black,
           ),
         ),
-        body: SafeArea(
+      ),
+      body: RefreshIndicator(
+        onRefresh: () async {
+          //await Future.delayed(Duration(seconds: 2));
+          refreshEvents();
+        },
+        child: SafeArea(
             child: Container(
           padding: EdgeInsets.symmetric(horizontal: 20),
           height: MediaQuery.of(context).size.height - 50,
@@ -90,19 +99,14 @@ class _MyEventsState extends State<MyEvents> {
             },
           ),
         )),
-      );
-
-  logout() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.remove("username");
-
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (BuildContext ctx) => HomePage()));
-  }
+      ));
 
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
+    setState(() {
+      refreshEvents();
+    });
     throw UnimplementedError();
   }
 }

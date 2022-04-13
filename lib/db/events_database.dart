@@ -124,7 +124,7 @@ CREATE TABLE $tableEvent (
     );
   }
 
-  Future<int> delete(String id) async {
+  Future<int> delete(int id) async {
     final db = await instance.database;
 
     return await db.delete(

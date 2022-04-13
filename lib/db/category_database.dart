@@ -85,6 +85,22 @@ CREATE TABLE $tableCategory (
     }
   }
 
+  Future<Category?> readById(int? id) async {
+    final db = await instance.database;
+    final maps = await db.query(
+      tableCategory,
+      columns: CateogryFields.values,
+      where: '${CateogryFields.id} = ?',
+      whereArgs: [id],
+    );
+
+    if (maps.isNotEmpty) {
+      return Category.fromJson(maps.first);
+    } else {
+      return null;
+    }
+  }
+
   Future<List<Category>> readAllCategories() async {
     final db = await instance.database;
     final result = await db.query(tableCategory);

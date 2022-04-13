@@ -40,9 +40,6 @@ class _HomePageState extends State<EventPage> {
 
   @override
   void dispose() {
-    CategoryDatabase.instance.close();
-    EventDatabase.instance.close();
-
     super.dispose();
   }
 
@@ -83,66 +80,9 @@ class _HomePageState extends State<EventPage> {
                                 color: Colors.white),
                           ),
                           Spacer(),
-                          /*IconButton(
-                              icon: Icon(
-                                Icons.person_outline,
-                                size: 60,
-                                color: Colors.white,
-                              ),
-                              onPressed: () async {
-                                SharedPreferences prefs =
-                                    await SharedPreferences.getInstance();
-                                User user = await UserDatabase.instance
-                                    .getUserByUsername(
-                                        prefs.getString("username"));
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          ProfilePage(user: user),
-                                    ));
-                              }),*/
                         ],
                       ),
                     ),
-                    /*Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 32.0),
-                      child: Text(
-                        "Events",
-                        style: TextStyle(
-                            fontSize: 40.0,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0x99FFFFFF)),
-                      ),
-                    ),*/
-                    /*Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 10.0),
-                      child: Material(
-                        elevation: 5,
-                        borderRadius: BorderRadius.circular(30),
-                        color: Colors.white,
-                        child: MaterialButton(
-                            padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-                            minWidth: MediaQuery.of(context).size.width,
-                            onPressed: () async {
-                              await Navigator.of(context).push(
-                                MaterialPageRoute(
-                                    builder: (context) => EventFormPage()),
-                              );
-
-                              refreshData();
-                            },
-                            child: Text(
-                              " + Create event",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 25,
-                                  color: Colors.blueAccent,
-                                  fontWeight: FontWeight.bold),
-                            )),
-                      ),
-                    ),*/
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 24.0),
                       child: Consumer<AppState>(
@@ -247,12 +187,14 @@ class _HomePageState extends State<EventPage> {
                 color: Colors.white,
               ),
               IconButton(
-                  onPressed: () async {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MyEvents(),
-                        ));
+                  onPressed: () {
+                    Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => MyEvents()))
+                        .then((value) {
+                      setState(() {
+                        refreshData();
+                      });
+                    });
                   },
                   icon: Icon(Icons.event),
                   color: Colors.white),
