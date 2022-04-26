@@ -14,6 +14,7 @@ import 'package:the_eventors_app/models/category.dart';
 import 'package:the_eventors_app/models/event.dart';
 import 'package:the_eventors_app/models/participant.dart';
 import 'package:google_maps_webservice/places.dart';
+import 'package:the_eventors_app/pages/event_page.dart';
 import 'package:the_eventors_app/services/.api.dart';
 import 'package:the_eventors_app/widget/event_form_widget.dart';
 
@@ -37,7 +38,6 @@ class _EventPageState extends State<EventFormPage> {
   late String location;
   late String description;
   late String guest;
-  late String categoryName;
   String imageData = "";
   File? imageFile;
   GoogleMapsPlaces _places = GoogleMapsPlaces(apiKey: googleAPIKey);
@@ -54,8 +54,6 @@ class _EventPageState extends State<EventFormPage> {
     super.initState();
     categories = [];
     refreshCategories();
-    categoryName = "";
-    getCategoryName(widget.event?.categoryId);
     //images = [];
     //imageFile = Future<File>;
     username = "";
@@ -74,24 +72,11 @@ class _EventPageState extends State<EventFormPage> {
     super.dispose();
   }
 
-  Future<void> getCategoryName(int? id) async {
-    debugPrint("HEHE");
-    var category = await CategoryDatabase.instance.readById(id);
-    if (category != null) {
-      debugPrint("HAHA");
-    }
-    setState(() {
-      categoryName = category!.name.toString();
-    });
-    debugPrint(categoryName);
-  }
-
   Future refreshCategories() async {
     setState(() => isLoading = true);
 
     this.categories = (await CategoryDatabase.instance.readAllCategories());
     getUsername();
-    getCategoryName(widget.event?.categoryId);
     setState(() => isLoading = false);
   }
 
@@ -114,24 +99,16 @@ class _EventPageState extends State<EventFormPage> {
     }
   }
 
-  convertDateTime(DateTime? time) {
-    final f = new DateFormat('dd-MM-yyyy hh:mm');
-
-    return f.format(time!).toString();
-  }
-
   getLenghtOfImages() {
     var images;
-    var length = 0;
-    if (imageData == "") {
-      var img = widget.event!.images.split(" , ");
-      length = img.length - 1;
-    }
-    if (imageData != null && imageData != "") {
+    var length;
+    if (imageData != null) {
       var images = imageData.split(" , ");
-      //length += images.length - 1;
+      length = images.length;
+    } else {
+      length = 0;
     }
-    return length;
+    return length - 1;
   }
 
   Future<void> getUsername() async {
@@ -205,7 +182,7 @@ class _EventPageState extends State<EventFormPage> {
                           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
                           hintText: time == ""
                               ? "Start of event - Date and time"
-                              : convertDateTime(widget.event?.startTime),
+                              : time.toString().substring(0, time.length - 4),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -250,9 +227,7 @@ class _EventPageState extends State<EventFormPage> {
                         decoration: InputDecoration(
                           prefixIcon: Icon(Icons.category),
                           contentPadding: EdgeInsets.fromLTRB(5, 15, 5, 15),
-                          hintText: categoryName != ""
-                              ? categoryName
-                              : "Select category",
+                          hintText: "Select category",
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -269,13 +244,10 @@ class _EventPageState extends State<EventFormPage> {
                         },
                         isExpanded: false,
                         iconSize: 24.0,
-                        hint: categoryId == 0
+                        hint: _category != null
                             ? Text(_category.name.toString(),
                                 style: TextStyle(fontSize: 24.0))
-                            : Text(
-                                categoryName != ""
-                                    ? categoryName
-                                    : "Select category",
+                            : Text('Select category',
                                 style: TextStyle(fontSize: 24.0)),
                       )
                     ],
@@ -331,7 +303,7 @@ class _EventPageState extends State<EventFormPage> {
                 child: MaterialButton(
                   minWidth: double.infinity,
                   height: 60,
-                  onPressed: addOrUpdateEvent,
+                  onPressed: addEvent,
                   color: Color(0xff0095FF),
                   elevation: 0,
                   shape: RoundedRectangleBorder(
@@ -372,45 +344,6 @@ class _EventPageState extends State<EventFormPage> {
     }
   }
 
-  void addOrUpdateEvent() async {
-    final isValid = _formKey.currentState!.validate();
-
-    if (isValid) {
-      final isUpdating = widget.event != null;
-
-      if (isUpdating) {
-        await updateEvent();
-      } else {
-        await addEvent();
-      }
-
-      Navigator.of(context).pop();
-    }
-  }
-
-  Future updateEvent() async {
-    List<String> img = widget.event!.images.split(" , ");
-    String imgData = "";
-    for (int i = 0; i < img.length; i++) {
-      if (img[i] != "") {
-        imgData += img[i] + " , ";
-      }
-    }
-    imgData += imageData;
-    final event = widget.event!.copy(
-        title: title,
-        startTime: DateTime.parse(time),
-        duration: duration,
-        location: location,
-        description: description,
-        images: imgData,
-        categoryId: categoryId,
-        createdTime: DateTime.now(),
-        createdBy: username,
-        guest: guest);
-    await EventDatabase.instance.update(event);
-  }
-
   Future addEvent() async {
     final isValid = _formKey.currentState!.validate();
 
@@ -430,6 +363,10 @@ class _EventPageState extends State<EventFormPage> {
     final participant =
         Participant(eventId: eventObj.id, going: "", interesed: "");
     await ParticipantDatabase.instance.create(participant);
-    Navigator.pop(context);
+    return Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => EventPage(),
+        ));
   }
 }

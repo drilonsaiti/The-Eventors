@@ -196,7 +196,6 @@ class _LoginPageState extends State<LoginPage> {
     if (isValid) {
       final user =
           await UserDatabase.instance.getLogin(this.username, this.password);
-      debugPrint("USER NUMBER " + user.toString());
       if (user == 1) {
         SharedPreferences prefs = await SharedPreferences.getInstance();
         prefs.setString('username', this.username);

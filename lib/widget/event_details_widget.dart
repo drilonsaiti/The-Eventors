@@ -451,7 +451,6 @@ class _EventDetailsPage extends State<EventDetailsContent> {
                         }
                       });
                     }
-                    getInteresedParticpant(event.id);
                   },
                   child: hasPresedInteresed == false
                       ? Text("Interesed")

@@ -49,7 +49,6 @@ class _ProfilePageState extends State<ProfilePage> {
         imageFile = File(pickedImage.path);
       });
       imageData = base64Encode(imageFile!.readAsBytesSync());
-      debugPrint("IMAGE DATA " + imageData.substring(0, 10));
       final user = this.userState.copy(
           username: this.userState.username,
           email: this.userState.email,

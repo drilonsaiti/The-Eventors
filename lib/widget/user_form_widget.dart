@@ -60,7 +60,7 @@ class UserFormWidget extends StatelessWidget {
         decoration: InputDecoration(
           prefixIcon: Icon(Icons.account_circle),
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-          hintText: "First Name",
+          hintText: "Username",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
           ),

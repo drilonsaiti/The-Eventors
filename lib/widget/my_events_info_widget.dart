@@ -6,6 +6,7 @@ import 'package:the_eventors_app/db/events_database.dart';
 import 'package:the_eventors_app/models/event.dart';
 import 'package:the_eventors_app/pages/event_form_page.dart';
 import 'package:the_eventors_app/pages/event_page.dart';
+import 'package:the_eventors_app/pages/event_update_page.dart';
 import 'package:the_eventors_app/pages/my_events_info.dart';
 
 class MyEventsWidget extends StatefulWidget {
@@ -66,7 +67,7 @@ class MyEventsWidgetState extends State<MyEventsWidget> {
     return Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => EventFormPage(event: widget.event),
+          builder: (context) => EventUpdatePage(event: widget.event),
         ));
   }
 
